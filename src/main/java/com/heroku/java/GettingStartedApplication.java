@@ -29,7 +29,7 @@ public class GettingStartedApplication {
 
     private String getRandomString() {
         UUID uuid = UUID.randomUUID();
-        return uuid.toString();
+        return String.format("%1.30s", uuid.toString().replaceAll("-", ""));
     }
 
     @GetMapping("/database")
