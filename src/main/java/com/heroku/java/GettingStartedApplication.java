@@ -47,6 +47,8 @@ public class GettingStartedApplication {
                 output.add("Read from DB: " + resultSet.getTimestamp("tick") +" " + resultSet.getString("random_string"));
             }
 
+            System.out.println("Emma Log Statement");
+
             model.put("records", output);
             return "database";
 
